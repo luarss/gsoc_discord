@@ -67,6 +67,13 @@ class Exporter:
                 )
                 total_messages += count
 
+        # Save state after successful export
+        if self.config.export.incremental:
+            self.state.save(self.config.export.state_file)
+            logger.info(f"State saved to {self.config.export.state_file}")
+
+        logger.info(f"Export complete. Total messages: {total_messages}")
+
     def _get_all_text_channels(self, guild) -> list:
         """Get all text channels from a guild as channel configs."""
         from discord_summary.config import ChannelConfig
@@ -78,16 +85,9 @@ class Exporter:
             )
         return channels
 
-        # Save state after successful export
-        if self.config.export.incremental:
-            self.state.save(self.config.export.state_file)
-            logger.info(f"State saved to {self.config.export.state_file}")
-
-        logger.info(f"Export complete. Total messages: {total_messages}")
-
     async def _export_channel(
         self,
-        guild: object,  # Reserved for future use
+        guild: object,  # Reserved for future use  # noqa: ARG002
         guild_name: str,
         channel_config,
     ) -> int:
