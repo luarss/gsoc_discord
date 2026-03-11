@@ -1,9 +1,6 @@
 # Environment
 .env
 
-# Configuration
-config.yaml
-
 # Python
 __pycache__/
 *.py[cod]

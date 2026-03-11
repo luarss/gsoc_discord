@@ -1,0 +1,27 @@
+# Discord Chat History Exporter Configuration
+# Copy this file to config.yaml and customize
+
+# Discord bot token (optional if using DISCORD_TOKEN env var)
+# Get your token from https://discord.com/developers/applications
+token: ""
+
+# Define what to export
+scope:
+  guilds:
+    - id: 1476481707120005141  # Your server ID
+      name: "My Server"       # Optional friendly name
+      # channels: []  # Omit to export all text channels
+
+# Output settings
+output:
+  directory: "./exports"  # Where to save exported markdown files
+  timezone: "UTC"         # Timezone for timestamps
+
+# Export behavior
+export:
+  incremental: true            # Only export new messages
+  state_file: "./export_state.json"  # State file for incremental exports
+  include_attachments: true    # Include attachment URLs in exports
+  include_reactions: true      # Include reaction counts
+  include_threads: true        # Export thread messages
+  batch_size: 100              # Messages to fetch per API call (1-500)
