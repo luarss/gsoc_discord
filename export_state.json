@@ -1,1 +1,60 @@
-{"channels": {}}
+{
+  "channels": {
+    "1476484104580104264": {
+      "last_message_id": "1476492954293108767",
+      "total_exported": 1
+    },
+    "1476481707547820135": {
+      "last_message_id": "1481185620553629838",
+      "total_exported": 69
+    },
+    "1476484945642913812": {
+      "last_message_id": "1480338885111447582",
+      "total_exported": 28
+    },
+    "1478299042432946237": {
+      "last_message_id": "1480968829441019934",
+      "total_exported": 64
+    },
+    "1478299062599159870": {
+      "last_message_id": "1480240884892172410",
+      "total_exported": 57
+    },
+    "1478878819434762454": {
+      "last_message_id": "1481126767468089459",
+      "total_exported": 75
+    },
+    "1478901701510561963": {
+      "last_message_id": "1480938834568024154",
+      "total_exported": 29
+    },
+    "1478913290997596191": {
+      "last_message_id": "1481110954099085312",
+      "total_exported": 26
+    },
+    "1476485007710224426": {
+      "last_message_id": null,
+      "total_exported": 0
+    },
+    "1476486903942615103": {
+      "last_message_id": null,
+      "total_exported": 0
+    },
+    "1478998191990112327": {
+      "last_message_id": "1480329312774258709",
+      "total_exported": 63
+    },
+    "1480046031059157063": {
+      "last_message_id": "1480379144704622712",
+      "total_exported": 2
+    },
+    "1480046375231164477": {
+      "last_message_id": "1481173389178835021",
+      "total_exported": 4
+    },
+    "1481065600817303625": {
+      "last_message_id": "1481065841473753232",
+      "total_exported": 1
+    }
+  }
+}
